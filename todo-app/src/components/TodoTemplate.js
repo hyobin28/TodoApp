@@ -1,5 +1,5 @@
 //화면 가운데 정렬, 앱 타이틀 보여줌
-import './TodoTemplate.scss'
+import '../Style/TodoTemplate.scss';
 
 const TodoTemplate = ({children}) => {
   return(

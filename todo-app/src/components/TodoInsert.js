@@ -1,7 +1,7 @@
 //새로운 항목 입력하고 추가할 수 있음
 //state를 통해 input 상태 관리
 import {MdAdd} from 'react-icons/md';
-import './TodoInsert.scss';
+import '../Style/TodoInsert.scss';
 import { useState, useCallback } from 'react';
 
 const TodoInsert = ({onInsert}) => {
@@ -11,6 +11,7 @@ const TodoInsert = ({onInsert}) => {
     setValue(e.target.value);
   }, []);
 
+  //폼이 제출될 때 실행
   const onSubmit = useCallback(
     e => {
       onInsert(value);
